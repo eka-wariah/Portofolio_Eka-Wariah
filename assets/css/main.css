@@ -337,6 +337,27 @@ h6 {
   font-size: 13px;
   padding-top: 5px;
 }
+.half-circle-top {
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.info-item {
+  padding: 30px;
+}
+
+.info-item i {
+  font-size: 32px;
+  color: #4154f1;
+  background: #f6f9ff;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
 
 /*--------------------------------------------------------------
 # Preloader

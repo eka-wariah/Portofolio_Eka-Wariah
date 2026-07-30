@@ -1500,3 +1500,57 @@ section,
   background-color:#0563bb;
   color: #ffffff;
 }
+
+.experience .portfolio-filters{
+
+  padding:0;
+
+  margin:40px auto;
+
+  list-style:none;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:12px;
+
+  flex-wrap:wrap;
+
+}
+
+.experience .portfolio-filters li{
+
+  cursor:pointer;
+
+  padding:10px 24px;
+
+  border-radius:50px;
+
+  background:#f3f6fd;
+
+  color:#272829;
+
+  font-weight:600;
+
+  transition:.3s;
+
+}
+
+.experience .portfolio-filters li:hover{
+
+  background:#149ddd;
+
+  color:#fff;
+
+}
+
+.experience .portfolio-filters .filter-active{
+
+  background:#149ddd;
+
+  color:#fff;
+
+}

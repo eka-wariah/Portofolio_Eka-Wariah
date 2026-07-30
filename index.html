@@ -27,6 +27,319 @@
 </head>
 
 <body class="index-page">
+  <style>
+  .profile-card{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.profile-photo{
+
+width:300px;
+height:380px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+border:8px solid #ffffff;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+.profile-photo:hover{
+
+transform:translateY(-8px);
+
+}
+
+.profile-info li{
+
+display:flex;
+align-items:center;
+
+margin-bottom:22px;
+
+font-size:17px;
+
+}
+
+.profile-info i{
+
+color:#149ddd;
+
+font-size:20px;
+
+width:35px;
+
+}
+
+.profile-info strong{
+
+width:120px;
+
+}
+
+.profile-info span{
+
+color:#444;
+
+}
+.skill-card{
+
+background:#ffffff;
+
+padding:30px;
+
+border-radius:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+height:100%;
+
+transition:.3s;
+
+}
+
+.skill-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.skill-card h4{
+
+margin-bottom:20px;
+
+color:#000000;
+
+font-weight:700;
+
+}
+
+.skill-card h4 i{
+
+margin-right:8px;
+
+}
+
+.skill-badge{
+
+display:inline-block;
+
+padding:10px 18px;
+
+margin:6px;
+
+border-radius:30px;
+
+background:#eef6ff;
+
+color:#000000;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.skill-badge:hover{
+
+background:#000000;
+
+color:#fff;
+
+}
+.experience-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ===========================
+   EXPERIENCE FILTER
+=========================== */
+
+.experience-filters{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 40px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 40px; */
+     /* sebelumnya 35px */
+}
+
+.experience-filters li{
+  cursor: pointer;
+    display: inline-block;
+
+    padding: 10px 24px;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+
+    border-radius: 50px;
+
+    background: #f3f6fd;
+    color: #272829;
+
+    transition: all .3s ease;
+
+    font-family: var(--heading-font);
+
+    /* cursor: pointer;
+
+    padding: 10px 24px;
+
+    border-radius: 50px;
+
+    background: #f3f6fd;
+
+    color: #272829;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+    border: 1px solid transparent; */
+
+}
+
+.experience-filters li:hover{
+  background: #0047a4;
+    color: #fff;
+    transform: translateY(-2px);
+
+    /* background: #0047a4;
+
+    color: white;
+
+    transform: translateY(-2px); */
+
+}
+
+.experience-filters .filter-active{
+
+  background: #0047a4;
+    color: #fff;
+}
+.experience-card{
+
+background:#fff;
+
+border-radius:20px;
+
+padding:35px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.experience-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.experience-card h3{
+
+font-size:30px;
+
+font-weight:700;
+
+color:#173b6c;
+
+margin-bottom:10px;
+
+}
+
+.experience-card small{
+
+color:#0047a4;
+
+font-weight:600;
+
+display:block;
+
+margin-bottom:20px;
+
+}
+
+.experience-card p{
+
+text-align:justify;
+
+line-height:1.9;
+
+margin-bottom:20px;
+
+}
+
+.experience-tech{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+}
+
+.experience-tech span{
+
+background:#eef7ff;
+
+color:#0047a4;
+
+padding:8px 18px;
+
+border-radius:50px;
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+  </style>
 
   <header id="header" class="header d-flex flex-column justify-content-center">
 
@@ -37,7 +350,7 @@
         <li><a href="#home" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About Me</span></a></li>
         <li><a href="#skills"><i class="bi bi-activity"></i><span>Skills</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Pengalaman</span></a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
         <li><a href="#certification"><i class="bi bi-mortarboard"></i><span>Certificate</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
@@ -56,7 +369,9 @@
       <div class="container" data-aos="zoom-out">
         <div class="row justify-content-center">
           <div class="col-lg-9">
+            <h1 class="display-1 fw-bold"  ><span class="typed" data-typed-items="Portofolio">Portofolio</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></h1>
             <h2><p>Halo, Saya <span class="typed" data-typed-items="Eka Wariah">Eka Wariah</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p></h2>
+            
             
             <div class="social-links">
               <a href="https://x.com/Eka_Wariah?t=gfauXhMxquC0ZrWuvstDFA&s=08"><i class="bi bi-twitter-x"></i></a>
@@ -85,30 +400,76 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Tentang Saya</h2>
-        <p>Saya seorang fresh graduate jurusan Informatika yang memiliki ketertarikan dan pengetahuan dalam bidang teknologi informasi serta pengembangan perangkat lunak. Selama masa studi, saya telah mempelajari dan menguasai dasar-dasar pemrograman (Back End dan Front End), pengelolaan basis data, serta desain UI/UX. Dengan dasar IT tersebut,saya siap untuk berkontribusi dengan fokus, semangat belajar tinggi, serta kemampuan bekerja baik secara individu maupun dalam tim, guna mencapai tujuan bersama dengan hasil yang optimal.</p>
+        <p style="text-align: justify;">Halo! Saya <strong>Eka Wariah</strong>, seorang <strong>Fresh Graduate Informatika</strong> yang memiliki ketertarikan besar pada dunia <strong>Web Development</strong>, khususnya dalam pengembangan aplikasi web menggunakan framework <strong>Laravel</strong>. Saya memiliki pengalaman dalam merancang dan membangun berbagai sistem informasi, mengelola basis data <strong>MySQL</strong>, serta mengembangkan antarmuka pengguna yang responsif dan mudah digunakan. Saya senang mempelajari teknologi baru, menyelesaikan permasalahan melalui pemrograman, dan terus mengembangkan kemampuan agar dapat menghasilkan solusi yang efektif dan berkualitas.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-3">
-            <img src="assets/img/3.jpg" class="img-fluid half-circle-top" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>My Biodata : </h2>
-            <div class="row">
-              <div class="col-lg-13">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Nama :</strong> <span>Eka Wariah</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Tempat, Tanggal Lahir:</strong> <span>Bandung, 28 Desember 2002</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>No Handphone:</strong> <span>+6289516085820</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ekawariah877@gmail.com</span></li>
+        <div class="row align-items-center">
+    
+            <!-- Biodata -->
+            <div class="col-lg-7 content">
+    
+                <h2 class="mb-4">Biodata Saya</h2>
+    
+                <ul class="list-unstyled profile-info">
+    
+                    <li>
+                        <i class="bi bi-person-fill"></i>
+                        <strong>Nama</strong>
+                        <span>Eka Wariah</span>
+                    </li>
+    
+                    <li>
+                        <i class="bi bi-mortarboard-fill"></i>
+                        <strong>Pendidikan</strong>
+                        <span>S1 Informatika - Universitas Wanita Internasional</span>
+                    </li>
+    
+                    <li>
+                        <i class="bi bi-code-slash"></i>
+                        <strong>Bidang</strong>
+                        <span>Web Developer</span>
+                    </li>
+    
+                    <li>
+                        <i class="bi bi-envelope-fill"></i>
+                        <strong>Email</strong>
+                        <span>ekawariah877@gmail.com</span>
+                    </li>
+    
+                    <li>
+                        <i class="bi bi-whatsapp"></i>
+                        <strong>WhatsApp</strong>
+                        <span>+62 895-1608-5820</span>
+                    </li>
+    
+                    <li>
+                        <i class="bi bi-github"></i>
+                        <strong>GitHub</strong>
+                        <span>github.com/eka-wariah</span>
+                    </li>
+    
                 </ul>
-              </div>
+    
             </div>
-          </div>
+    
+            <!-- Foto -->
+            <div class="col-lg-5 text-center">
+    
+                <div class="profile-card">
+    
+                    <img src="assets/img/3.jpg"
+                         class="img-fluid profile-photo"
+                         alt="Eka Wariah">
+    
+                </div>
+    
+            </div>
+    
         </div>
-      </div>
+    
+    </div>
 
     </section><!-- /About Section -->
 
@@ -120,72 +481,337 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Laravel Framework</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Online Data Entry</span> <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Administrasi Data</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Microsoft Office</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Database MySQL</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
+        <p>Beberapa teknologi dan tools yang saya gunakan dalam pengembangan aplikasi.</p>
       </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+  
+        <!-- Backend -->
+        <div class="col-lg-4">
+          <div class="skill-card">
+            <h4><i class="bi bi-code-slash"></i> Backend</h4>
+  
+            <span class="skill-badge">Laravel</span>
+            <span class="skill-badge">PHP</span>
+            <span class="skill-badge">MySQL</span>
+  
+          </div>
+        </div>
+  
+        <!-- Frontend -->
+        <div class="col-lg-4">
+          <div class="skill-card">
+            <h4><i class="bi bi-window"></i> Frontend</h4>
+  
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">JavaScript</span>
+  
+          </div>
+        </div>
+  
+        <!-- Tools -->
+        <div class="col-lg-4">
+          <div class="skill-card">
+            <h4><i class="bi bi-tools"></i> Tools</h4>
+  
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">GitHub</span>
+            <span class="skill-badge">VS Code</span>
+            <span class="skill-badge">Laragon</span>
+  
+          </div>
+        </div>
+  
+      </div>
+      </div>
+
+  
 
     </section><!-- /Skills Section -->
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p><em>Saya seorang fresh graduate jurusan Informatika yang memiliki ketertarikan dan pengetahuan dalam bidang teknologi informasi serta pengembangan perangkat lunak. Selama masa studi, saya telah mempelajari dan menguasai dasar-dasar pemrograman (Back End dan Front End), pengelolaan basis data, serta desain UI/UX. Dengan dasar IT tersebut,saya siap untuk berkontribusi dengan fokus, semangat belajar tinggi, serta kemampuan bekerja baik secara individu maupun dalam tim, guna mencapai tujuan bersama dengan hasil yang optimal.</em></p>
-      </div><!-- End Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Pengalaman & Proyek Akademic</h2>
+            <p>Beberapa proyek yang pernah saya kerjakan selama kuliah dan pengembangan pribadi.</p>
+        </div>
+    
+        <div class="container">
+    
+            <div class="isotope-layout"
+                 data-default-filter="*"
+                 data-layout="fitRows"
+                 data-sort="original-order">
+    
+                <!-- FILTER -->
+    
+                <ul class="experience-filters isotope-filters"
+                data-aos="fade-up"
+                data-aos-delay="100">
+            
+                <li data-filter="*" class="filter-active">
+                    Semua
+                </li>
+                <li data-filter=".sipkl">
+                  SIPKL
+              </li>
+              <li data-filter=".sip3">
+                SIP3
+            </li>
+            <li data-filter=".sir">
+              SIRetribusi
+           </li>
+                <li data-filter=".lucd">
+                  LUCD
+              </li>
+            
+            </ul>
+                <!-- CARD -->
+    
+                <div class="row gy-4 isotope-container">
 
-      <div class="container">
+                   <!-- PORTFOLIO -->
+    
+                   <div class="col-lg-12 isotope-item sipkl">
+    
+                    <div class="experience-card">
+
+                      <h3>
+                        Pengembangan Aplikasi SIPKL
+                      </h3>
+
+                      <h6>SMK Mahaputra Cerdas Utama</h6>
+              
+                      <small>
+                        Januari 2026 - Juni 2026
+                      </small>
+
+
+                        <p>
+                          Menjadi Front End dan Back End Developer dalam pengembangan aplikasi berbasis website SIPKL (Sistem Informasi Kegiatan Praktik Kerja Lapangan) yang bertujuan untuk membantu guru pembimbing, panitia PKL, perusahaan, dan siswa dalam mengelola seluruh proses Praktik Kerja Lapangan, mulai dari presensi, bimbingan, monitoring kegiatan, hingga penyusunan laporan secara terintegrasi.
+                        </p>
+
+                        <div class="d-flex gap-2 flex-wrap mt-4">
+
+                          <a href="https://github.com/eka-wariah/PKL.git"
+                             target="_blank"
+                             class="btn btn-dark rounded-pill">
+                      
+                              <i class="bi bi-github me-2"></i>
+                              GitHub Repository
+                      
+                          </a>
+
+                          <a href="https://sipkl.smkmahaputracerdasutama.sch.id/"
+                             target="_blank"
+                             class="btn btn-dark rounded-pill">
+                      
+                              <i class="bi bi-link me-2"></i>
+                              Link Aplikasi
+                      
+                          </a>
+                      
+                      </div>
+                      <br>
+
+                        <div class="experience-tech">
+
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>Bootstrap</span>
+
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+    
+                <!-- GURU -->
+    
+                <div class="col-lg-12 isotope-item sip3">
+    
+                  <div class="experience-card">
+
+                      <h3>
+                        Pengembangan Aplikasi SIP3
+                      </h3>
+
+                      <h6>SMK Mahaputra Cerdas Utama</h6>
+              
+                      <small>
+                        Juni 2024 - Juli 2024
+                      </small>
+
+
+                      <hr>
+
+                      <p>
+                        Menjadi Front-end dan Back-end Developer dalam Pengembangan Aplikasi berbasis website SIP3 (Sistem Informasi Pencatatan Poin Pelanggaran) yang bertujuan untuk membantu wakasek kesiswaan dalam mencatat pelanggaran siswa di SMK Mahaputra Cerdas Utama.
+                      </p>
+
+                      <div class="d-flex gap-2 flex-wrap mt-4">
+
+                        <a href="https://github.com/taupik3007/SiP3.git"
+                           target="_blank"
+                           class="btn btn-dark rounded-pill">
+                    
+                            <i class="bi bi-github me-2"></i>
+                            GitHub Repository
+                    
+                        </a>
+                        <a href="https://sip3.smkmahaputracerdasutama.sch.id/"
+                        target="_blank"
+                        class="btn btn-dark rounded-pill">
+                 
+                         <i class="bi bi-link me-2"></i>
+                         Link Aplikasi
+                 
+                     </a>
+                    
+                    </div>
+
+                    <br>
+
+                      <div class="experience-tech">
+
+                          <span>Laravel</span>
+
+                          <span>Bootstrap</span>
+
+                          <span>MySQL</span>
+
+                      </div>
+
+                  </div>
+
+              </div>
+                <!-- SIPKL -->
+    
+                <div class="col-lg-12 isotope-item sir">
+    
+                  <div class="experience-card">
+
+                      <h3>
+                        Perancangan Sistem Informasi Pembayaran Retribusi Air, Sampah dan Bank Sampah Pada Lingkungan RW 04 Berbasis Website
+                      </h3>
+                      <h6>Skripsi</h6>
+
+                      <hr>
+
+                      <p>
+                        Merancang dan membangun Sistem Informasi Pembayaran Retribusi Air, Sampah, dan Bank Sampah berbasis web menggunakan Laravel dan MySQL. Sistem ini dibuat untuk membantu proses pengelolaan data warga, pencatatan tagihan, transaksi pembayaran retribusi, serta penyusunan laporan secara lebih efektif dan terintegrasi. Pengembangan dilakukan mulai dari analisis kebutuhan, perancangan basis data, implementasi fitur, hingga pengujian sistem.
+                      </p>
+
+                      <div class="d-flex gap-2 flex-wrap mt-4">
+
+                        <a href="https://github.com/eka-wariah/SKR_SIRABS.git"
+                           target="_blank"
+                           class="btn btn-dark rounded-pill">
+                    
+                            <i class="bi bi-github me-2"></i>
+                            GitHub Repository
+                    
+                        </a>
+                    
+                    </div>
+                    <br>
+
+                      <div class="experience-tech">
+
+                          <span>Laravel</span>
+
+                          <span>PHP</span>
+
+                          <span>MySQL</span>
+
+                          <span>Bootstrap</span>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+                    <!-- SIPKL -->
+    
+                    <div class="col-lg-12 isotope-item lucd">
+    
+                        <div class="experience-card">
+    
+                            <h3>
+                              Pengembangan Aplikasi LUCD
+                            </h3>
+                              <h6>Orbit Future Academy (Studi Independen Kampus Merdeka)</h6>
+                    
+                            <small>
+                              Februari 2024 – Juni 2024
+                            </small>
+    
+                            <hr>
+    
+                            <p>
+                              Pada proyek LUCD, saya berperan sebagai Web Developer. Fokus saya adalah mengembangkan tampilan website menggunakan HTML, serta membantu mengintegrasikan antarmuka dengan sistem Back End menggunakan python agar model AI yang dikembangkan oleh tim dapat digunakan melalui website.
+                            </p>
+                            
+                            <div class="d-flex gap-2 flex-wrap mt-4">
+
+                              <a href="https://github.com/eka-wariah/LUCD.git"
+                                 target="_blank"
+                                 class="btn btn-dark rounded-pill">
+                          
+                                  <i class="bi bi-github me-2"></i>
+                                  GitHub Repository
+                          
+                              </a>
+                          
+                          </div>
+                          <br>
+    
+                            <div class="experience-tech">
+    
+                                <span>python</span>
+    
+                                <span>HTML</span>
+    
+                            </div>
+
+                            
+    
+                        </div>
+    
+                    </div>
+
+                   
+                    
+    
+                   
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+
+
+      <!-- <section id="resume" class="resume section"> -->
+       <!-- Section Title -->
+      <!-- <div class="container section-title" data-aos="fade-up">
+        <h2>Pengalaman</h2>
+      </div>
+       -->
+
+      <!-- <div class="container">
 
         <div class="row">
 
@@ -200,24 +826,24 @@
                 <li>+6289516085820</li>
                 <li>ekawariah877@gmail.com</li>
               </ul>
-            </div><!-- Edn Resume Item -->
-
+            </div> Edn Resume Item -->
+<!-- 
             <h3 class="resume-title">Pendidikan</h3>
             <div class="resume-item">
               <h4>S1 - Informatika</h4>
               <h5>2021 - 2025</h5>
               <p><em>Universitas Wanita Internasional</em></p>
-              </div><!-- Edn Resume Item -->
+              </div>Edn Resume Item
 
             <div class="resume-item">
               <h4>Rekayasa Perangkat Lunak</h4>
               <h5>2018 - 2021</h5>
               <p><em>SMKS Mahaputra Cerdas Utama</em></p>
-              </div><!-- Edn Resume Item -->
+              </div>Edn Resume Item -->
 
             
 
-          </div>
+          <!-- </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Pengalaman</h3>
@@ -231,9 +857,9 @@
                 <li>Mengembangkan logika aplikasi, pengelolaan data, serta integrasi fitur menggunakan framework Laravel</li>
                 <li>Sebagai backend developer dalam pengembangan aplikasi Laundry Garut agar sistem berjalan dengan baik dan stabil.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div> Edn Resume Item -->
 
-            <div class="resume-item">
+            <!-- <div class="resume-item">
               <h4>Kader Posyandu</h4>
               <h5>Mar 2025 - Des 2025</h5>
               <p><em>Mawar 04, Desa. Sukamukti Kec. Katapang Kab. Bandung</em></p>
@@ -242,7 +868,7 @@
                 <li>Menginput dan memperbarui data hasil pengukuran ke dalam sistem/website secara akurat.</li>
                 <li>Memastikan data tersimpan dengan rapi untuk kebutuhan monitoring kesehatan.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div> Edn Resume Item 
             <div class="resume-item">
               <h4>Back End & Front End Developer (Study Independent)</h4>
               <h5>Feb 2024 - Jun 2024</h5>
@@ -252,13 +878,13 @@
                 <li>Mendapat bagian menjadi front end dan back end untuk membuat aplikasi image classification bernama LUCD untuk mendeteksi gambar land cover sebagai output ke dua dari proyek akhir dari program.</li>
                 <li>Berperan sebagai technical writer dalam penyusunan jurnal ilmiah sebagai output dari proyek akhir pertama.</li>
               </ul>
-            </div><!-- Edn Resume Item -->
+            </div>Edn Resume Item -->
 
-          </div>
+          <!-- </div>
 
         </div>
 
-      </div>
+      </div> -->
 
     </section><!-- /Resume Section -->
 
@@ -374,6 +1000,71 @@
               </div>
             </div><!-- End Portfolio Item -->
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sir">
+              <img src="assets/img/portfolio/dashboardrt.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SIRetribusi</h4>
+                <p>Tampilan Dashboard RW</p>
+                <a href="assets/img/portfolio/dashboardrt.jpg" title="SIRetribusi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sir">
+              <img src="assets/img/portfolio/dashboardrt2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SIRetribusi</h4>
+                <p>Tampilan Dashboard RT</p>
+                <a href="assets/img/portfolio/dashboardrt2.jpg" title="SIRetribusi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sir">
+              <img src="assets/img/portfolio/dw  warga.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SIRABAS</h4>
+                <p>Tampilan Dashboard Warga</p>
+                <a href="assets/img/portfolio/dw  warga.jpg" title="SIRetribusi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sir">
+              <img src="assets/img/portfolio/dw bendahara.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SIRABAS</h4>
+                <p>Tampilan Dashboard Bendahara</p>
+                <a href="assets/img/portfolio/dw bendahara.png" title="SIRetribusi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sir">
+              <img src="assets/img/portfolio/dw pembayaran.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SIRABAS</h4>
+                <p>Tampilan Halaman Pembayaran</p>
+                <a href="assets/img/portfolio/dw pembayaran.jpg" title="SIRetribusi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sir">
+              <img src="assets/img/portfolio/dw pembayaran.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SIRABAS</h4>
+                <p>Tampilan Halaman Laporan Pembayaran</p>
+                <a href="assets/img/portfolio/dw pembayaran.jpg" title="SIRetribusi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sir">
+              <img src="assets/img/portfolio/dw wastebank.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>SIRABAS</h4>
+                <p>Tampilan Dashboard Bank Sampah</p>
+                <a href="assets/img/portfolio/dw wastebank.jpg" title="SIRetribusi" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
             
 
           </div><!-- End Portfolio Container -->
@@ -382,7 +1073,7 @@
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section>
 
     <!-- Services Section -->
     <section id="certification" class="portfolio section">
